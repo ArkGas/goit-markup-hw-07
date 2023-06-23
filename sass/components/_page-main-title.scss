@@ -1,0 +1,54 @@
+.box-title {
+  background-color: $background-color-footer;
+  min-height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1686528000&Signature=QHMN3E-LeFuaA6RcDA5ERL41ffZ5QjH5G8KXThdRlyIl6o9gJnzMWoFq~F9NwQv0tfBmpJsKHXbI7R7o8nPZxx7T4Zt5~BNhSc0leg2Uo4zRdAIS-SQlJC8d0eKIt24zZinLmD6~0G12tXkhi1whHiJSX-1f3PZypKlVsp3ER1pa~ZqnApk2y-Q3KQDsV1B2UINNHqxPXehJKgrBEHkN03uTgZgYoaRcK7wgL5zk1FAiZ0whkNr~BHzXgIdZDGaOl833fo6QHsdgXG-hGvx~o0B35FRGrG7egkVX7bKkCtp~Ek7JsCE77w4cj~a7JyKbh0v~k94cMoQoTNuMbEXbrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+}
+.item-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 452px 30px 452px;
+}
+.text-title {
+  color: $third-text-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+}
+.btn-t {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  box-shadow: 0 4px 4px #00000026;
+  border-radius: 4px;
+  background-color: $active-color;
+  color: $third-text-color;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-t:hover {
+  background-color: $active-color;
+  color: $third-text-color;
+  box-shadow: 0 4px 4px #00000026;
+}
+.btn-t:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0 4px 4px #00000026;
+}

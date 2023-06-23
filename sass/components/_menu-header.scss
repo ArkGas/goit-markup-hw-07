@@ -1,0 +1,44 @@
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 46px;
+  max-width: 245px;
+
+  &__link {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration-line: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__:hover {
+      color: $active-color;
+    }
+    &__:focus {
+      color: $active-color;
+    }
+  }
+
+  &__contact {
+    color: $secondary-text-color;
+  }
+}
+.navigation__left-side {
+  display: flex;
+  align-items: center;
+
+  &__right-side {
+    justify-content: space-between;
+    gap: 50px;
+  }
+}
+.navigation-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+}

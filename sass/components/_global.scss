@@ -1,0 +1,19 @@
+li {
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: $primary-text-color;
+  background-color: $third-text-color;
+  margin: 0px auto;
+}
+header {
+  border-bottom: 1px solid $border-header;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+section {
+  padding-bottom: 94px;
+}
