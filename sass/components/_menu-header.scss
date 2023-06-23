@@ -14,18 +14,24 @@
     text-decoration-line: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    &__:hover {
-      color: $active-color;
-    }
-    &__:focus {
-      color: $active-color;
-    }
+  .main-menu__link:hover {
+    color: $active-color;
+  }
+  .main-menu__link:focus {
+    color: $active-color;
   }
 }
 
-.main-menu--contact {
+.main-menu__link--contact {
   color: $secondary-text-color;
+}
+.main-menu__link--contact:hover {
+  color: $active-color;
+}
+.main-menu__link--contact:focus {
+  color: $active-color;
 }
 
 .navigation__left-side {
