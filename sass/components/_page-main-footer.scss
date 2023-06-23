@@ -1,0 +1,87 @@
+.adres {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.footer {
+  background: #2f303a;
+  display: flex;
+  align-items: baseline;
+}
+.logo-footer {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.flex-footer {
+  display: flex;
+  margin-top: 60px;
+  align-items: baseline;
+}
+.newsletter-email-box {
+  padding-left: 78px;
+}
+.newsletter-label {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.newsletter-email-input {
+  border: 1px solid #2196f3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  height: 50px;
+  width: 358px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+.newsletter-email-input:placeholder-shown {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.newsletter-email-input[placeholder] {
+  padding-left: 16px;
+}
+.newsletter-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  text-align: center;
+  border-radius: 4px;
+  height: 50px;
+  width: 200px;
+}
+.newsletter-icon {
+  fill: #fff;
+  position: relative;
+  top: 5px;
+  left: 16px;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+}
+.cont-link-footer {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 9px;
+}

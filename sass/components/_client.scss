@@ -1,0 +1,32 @@
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-client {
+  max-width: 170px;
+  max-height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-client:hover {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.icon-client:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.client-box-icon {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+}
+.client-text {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 auto;
+}
