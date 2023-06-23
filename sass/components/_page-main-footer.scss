@@ -1,11 +1,11 @@
 .adres {
-  color: #ffffff;
+  color: $third-text-color;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .footer {
-  background: #2f303a;
+  background: $background-color-footer;
   display: flex;
   align-items: baseline;
 }
@@ -15,7 +15,7 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $third-text-color;
   text-decoration: none;
 }
 .flex-footer {
@@ -36,16 +36,16 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $third-text-color;
 }
 .newsletter-email-input {
-  border: 1px solid #2196f3;
+  border: 1px solid $active-color;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   height: 50px;
   width: 358px;
   background-color: transparent;
-  color: #fff;
+  color: $third-text-color;
   outline: none;
 }
 .newsletter-email-input:placeholder-shown {
@@ -63,15 +63,15 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: $third-text-color;
+  background-color: $active-color;
   text-align: center;
   border-radius: 4px;
   height: 50px;
   width: 200px;
 }
 .newsletter-icon {
-  fill: #fff;
+  fill: $third-text-color;
   position: relative;
   top: 5px;
   left: 16px;

@@ -48,8 +48,8 @@
   box-shadow: 0 4px 4px #00000026;
 }
 .btn-t:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: $active-color;
+  color: $third-text-color;
   box-shadow: 0 4px 4px #00000026;
 }
 .header-block-shade {

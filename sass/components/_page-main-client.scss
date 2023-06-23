@@ -6,18 +6,18 @@
 .icon-client {
   max-width: 170px;
   max-height: 92px;
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
+  fill: $client-fill-icon;
+  border: 1px solid $client-fill-icon;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-client:hover {
-  fill: #2196f3;
-  border-color: #2196f3;
+  fill: $active-color;
+  border-color: $active-color;
 }
 .icon-client:focus {
-  fill: #2196f3;
-  border-color: #2196f3;
+  fill: $active-color;
+  border-color: $active-color;
 }
 .client-box-icon {
   display: flex;
