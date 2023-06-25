@@ -1,0 +1,26 @@
+.lorem {
+  &__box {
+    display: flex;
+    margin-block: 94px;
+  }
+
+  &__item {
+    padding-right: 30px;
+  }
+
+  &__icon {
+    width: 270px;
+    height: 120px;
+    background-color: $background-lorem-icon;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__text {
+    color: $secondary-text-color;
+  }
+}
