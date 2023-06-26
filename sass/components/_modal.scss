@@ -37,163 +37,174 @@
   left: 91%;
   cursor: pointer;
 }
-.modal-form {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+
+.declaration {
+  &__text {
+    position: relative;
+    left: 79px;
+    bottom: 42px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
+  &__label-box {
+    padding-left: 55px;
+  }
+  &__declaration-checkbox {
+    position: relative;
+    top: 20px;
+    width: 16px;
+    height: 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  &__link,
+  &__link:hover,
+  &__link:focus,
+  &__link:visited {
+    color: $active-color;
+  }
+  &__send-button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $third-text-color;
+    background-color: $active-color;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 164px;
+    position: relative;
+    bottom: 20px;
+  }
+  &__checkbox-square-svg {
+    position: relative;
+    left: 54px;
+  }
+
+  &__checkbox-checked-svg {
+    fill: $third-text-color;
+    background-color: $active-color;
+    width: 16px;
+    height: 17px;
+    border-radius: 4px;
+    position: relative;
+    left: 54px;
+    bottom: 19px;
+    visibility: hidden;
+  }
+  &__checkbox:checked ~ &__checkbox-checked-svg {
+    visibility: visible;
+  }
+  &__checkbox:checked + &__checkbox-square-svg {
+    visibility: hidden;
+  }
 }
-.modal-legend {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  align-items: center;
-  text-align: center;
-  margin-top: 2px;
-  margin-bottom: 12px;
+.form {
+  &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    align-items: center;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 12px;
+  }
 }
 .label {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: $secondary-text-color;
+  &__box {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $secondary-text-color;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding-left: 40px;
+  }
+  &__text-help {
+    margin-bottom: 10px;
+  }
+  &__input-box {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  &__input-text {
+    margin: 10px auto 10px 0;
+    width: 366px;
+    height: 20px;
+    border: none;
+    outline-color: transparent;
+  }
+  &__icon {
+    fill: $primary-text-color;
+    margin: auto;
+  }
 
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  padding-left: 40px;
-}
-.label-text {
-  margin-bottom: 10px;
-}
-.textarea-label {
-  padding-bottom: 0;
-  margin-bottom: 20px;
-}
-.modal-input-div {
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-bottom: 10px;
-  display: flex;
-}
-.modal-input {
-  margin: 10px auto 10px 0;
-  width: 366px;
-  height: 20px;
-  border: none;
-  outline-color: transparent;
-}
-.textarea-input-div {
-  width: 448px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  display: flex;
-  position: relative;
-}
-.textarea-input {
-  resize: none;
-  margin: 12px auto;
-  width: 416px;
-  border: none;
-  outline-color: transparent;
-}
-.textarea-input::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.label:focus-within .modal-input-div,
-.label:focus-within .textarea-input-div {
-  border-color: $active-color;
-}
-.modal-icon {
-  fill: $primary-text-color;
-  margin: auto;
-}
-.label:focus-within .modal-icon {
-  fill: $active-color;
-}
-.modal-checkbox {
-  position: relative;
-  top: 20px;
-  width: 16px;
-  height: 15px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
+  &__com-box {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
 
-.checkbox-square-svg {
-  position: relative;
-  left: 54px;
-}
+  &__input-com-box {
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+  }
 
-.checkbox-checked-svg {
-  fill: $third-text-color;
-  background-color: $active-color;
-  width: 16px;
-  height: 17px;
-  border-radius: 4px;
-  position: relative;
-  left: 54px;
-  bottom: 19px;
-  visibility: hidden;
-}
-.modal-checkbox:checked ~ .checkbox-checked-svg {
-  visibility: visible;
-}
-.modal-checkbox:checked + .checkbox-square-svg {
-  visibility: hidden;
-}
+  &__input-com {
+    resize: none;
+    margin: 12px auto;
+    width: 416px;
+    border: none;
+    outline-color: transparent;
+  }
+  &__label__input-com::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-.modal-declaration {
-  position: relative;
-  left: 79px;
-  bottom: 42px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: $secondary-text-color;
-}
-.declaration-label {
-  padding-left: 55px;
-}
-.declaration-link,
-.declaration-link:hover,
-.declaration-link:focus,
-.declaration-link:visited {
-  color: $active-color;
-}
-.modal-send-button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: $third-text-color;
-  background-color: $active-color;
-  width: 200px;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
-  margin-left: 164px;
-  position: relative;
-  bottom: 20px;
+  &__box:focus-within &__input-box,
+  &__box:focus-within &__input-com-box {
+    border-color: $active-color;
+  }
+
+  &__box:focus-within &__icon {
+    fill: $active-color;
+  }
 }
